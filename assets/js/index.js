@@ -35,4 +35,13 @@ function currentWeather(city) {
     //weather icon
     var weathicon = response.weather[0].icon;
     var iconurl = "https://openweathermap.org/img/wn/" + weathicon + "@2x.png";
+    // date structure
+    var date = new Date(response.dt * 1000).toLocaleDateString();
+    // Concatenating city name and icon 
+    $(currentCity).html(response.name + "(" + date + ")" + "<img src=" + iconurl + ">");
 
+    // adding temp and converting it to fahrenheit
+    var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+    $(currentTemperature).html((tempF).toFixed(2) + "&#8457");
+    // Display the Humidity
+    $(currentHumidty).html(response.main.humidity + "%");
