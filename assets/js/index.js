@@ -88,3 +88,11 @@ function UVIndex(ln, lt) {
     $(currentUvindex).html(response.value);
   });
 }
+
+// 5 day forecast for city searched
+function forecast(cityid) {
+  var forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityid + "&appid=" + APIKey;
+  $.ajax({
+    url: forcastURL,
+    method: "GET"
+  })
