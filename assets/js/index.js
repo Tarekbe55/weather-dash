@@ -144,3 +144,10 @@ function loadlastCity() {
   }
 
 }
+//clears search history
+function clearHistory(event) {
+  event.preventDefault();
+  sCity = [];
+  localStorage.removeItem("cityname");
+  document.location.reload();
+}
