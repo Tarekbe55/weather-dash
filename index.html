@@ -21,6 +21,28 @@
         <h1 class="mx-auto display-4">Weather Dashboard</h1>
       </div>
     </nav>
+    <div class="container">
+      <!--Row for searching a city-->
+      <div class="row">
+        <div class="col-sm-4 bg-light">
+          <!--Title for search box-->
+          <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+          <!--Here we create the text box for capturing the search city Name-->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search-city" aria-label="City Search"
+              aria-describedby="search-button">
+            <div class="input-group-append">
+              <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <!--search history for city and clear button-->
+          <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+          <ul class="list-group">
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </header>
   <br>
 
