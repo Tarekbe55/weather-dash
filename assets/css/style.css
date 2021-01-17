@@ -1,0 +1,9 @@
+*{
+  box-sizing: border-box;
+}
+
+.navbar {
+background-color: #404040;
+color: white;
+text-align: center;
+}
