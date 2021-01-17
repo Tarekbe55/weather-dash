@@ -20,3 +20,12 @@ function displayWeather(event) {
     currentWeather(city);
   }
 }
+
+// AJAX call
+function currentWeather(city) {
+  // URL build to grab information from API
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + APIKey;
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  })
