@@ -28,4 +28,11 @@ function currentWeather(city) {
   $.ajax({
     url: queryURL,
     method: "GET",
-  })
+  }).then(function (response) {
+
+    console.log(response);
+
+    //weather icon
+    var weathicon = response.weather[0].icon;
+    var iconurl = "https://openweathermap.org/img/wn/" + weathicon + "@2x.png";
+
