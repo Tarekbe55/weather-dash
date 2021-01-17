@@ -129,6 +129,15 @@ function invokePastSearch(event) {
   }
 
 }
+// function to see if the city is in the history
+function find(c) {
+  for (var i = 0; i < sCity.length; i++) {
+    if (c.toUpperCase() === sCity[i]) {
+      return -1;
+    }
+  }
+  return 1;
+}
 
 // function to display all content when button is clicked
 function loadlastCity() {
