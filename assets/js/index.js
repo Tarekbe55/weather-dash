@@ -120,3 +120,12 @@ function addToList(c) {
   $(listEl).attr("data-value", c.toUpperCase());
   $(".list-group").append(listEl);
 }
+// Displays cities in history when clicked
+function invokePastSearch(event) {
+  var liEl = event.target;
+  if (event.target.matches("li")) {
+    city = liEl.textContent.trim();
+    currentWeather(city);
+  }
+
+}
