@@ -45,3 +45,8 @@ function currentWeather(city) {
     $(currentTemperature).html((tempF).toFixed(2) + "&#8457");
     // Display the Humidity
     $(currentHumidty).html(response.main.humidity + "%");
+
+    //Display Wind speed and convert to MPH
+    var ws = response.wind.speed;
+    var windsmph = (ws * 2.237).toFixed(1);
+    $(currentWSpeed).html(windsmph + "MPH");
