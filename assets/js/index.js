@@ -151,3 +151,8 @@ function clearHistory(event) {
   localStorage.removeItem("cityname");
   document.location.reload();
 }
+//event listeners to when buttons are clicked
+$("#search-button").on("click", displayWeather);
+$(document).on("click", invokePastSearch);
+$(window).on("load", loadlastCity);
+$("#clear-history").on("click", clearHistory);
