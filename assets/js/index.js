@@ -129,3 +129,18 @@ function invokePastSearch(event) {
   }
 
 }
+
+// function to display all content when button is clicked
+function loadlastCity() {
+  $("ul").empty();
+  var sCity = JSON.parse(localStorage.getItem("cityname"));
+  if (sCity !== null) {
+    sCity = JSON.parse(localStorage.getItem("cityname"));
+    for (i = 0; i < sCity.length; i++) {
+      addToList(sCity[i]);
+    }
+    city = sCity[i - 1];
+    currentWeather(city);
+  }
+
+}
