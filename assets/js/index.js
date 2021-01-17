@@ -52,8 +52,8 @@ function currentWeather(city) {
     var windsmph = (ws * 2.237).toFixed(1);
     $(currentWSpeed).html(windsmph + "MPH");
 
-    // UVIndex.
-    //By Geographic coordinates method and using appid and coordinates as a parameter we are going build our uv query url inside the function below.
+    // UVIndex using cordinates 
+
     UVIndex(response.coord.lon, response.coord.lat);
     forecast(response.id);
     if (response.cod == 200) {
@@ -75,5 +75,16 @@ function currentWeather(city) {
       }
     }
 
+  });
+}
+// function to return UV index response
+function UVIndex(ln, lt) {
+  //UVindex url build
+  var uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lt + "&lon=" + ln;
+  $.ajax({
+    url: uvURL,
+    method: "GET"
+  }).then(function (response) {
+    $(currentUvindex).html(response.value);
   });
 }
