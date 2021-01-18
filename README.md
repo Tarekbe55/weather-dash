@@ -1,14 +1,26 @@
 # weather-dash
 
+## Description
+
+This is a web application that will produce the current and 5 day forecast for any city. The information is pulled from an API (OpenWeather API). It was created using aJax call and jquery.
+
+## Tech/framework used
+HTML, CSS, Bootstrap, jQuery and moment.js library 
+
+## Authors
+Tarek Behairy
+
+## Screenshots
+![day planner](assets/screenshots/weatherdash.png)
+
+## Deployed application link
+https://tarekbe55.github.io/weather-dash/
 
 
+# Contact
+Reach me at tbtarek@gmail.com for any questions
 
-
-
-
-
-
-
+# Project description below
 
 # 06 Server-Side APIs: Weather Dashboard
 
