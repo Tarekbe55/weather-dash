@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a web application that will produce the current and 5 day forecast for any city. The information is pulled from an API (OpenWeather API). It was created using aJax call and jquery.
+This is a web application that will produce the current weather and 5 day forecast for any city. The information is pulled from an API (OpenWeather API). It was created using aJax call and jquery. All previous searches are added to history and will populate again once clicked.
 
 ## Tech/framework used
 HTML, CSS, Bootstrap, jQuery and moment.js library 
