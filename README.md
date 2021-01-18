@@ -11,7 +11,7 @@ HTML, CSS, Bootstrap, jQuery and moment.js library
 Tarek Behairy
 
 ## Screenshots
-![day planner](assets/screenshots/weatherdash.png)
+![weather dah](assets/screenshots/weatherdash.png)
 
 ## Deployed application link
 https://tarekbe55.github.io/weather-dash/
